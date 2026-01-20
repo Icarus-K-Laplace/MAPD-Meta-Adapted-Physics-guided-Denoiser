@@ -30,6 +30,27 @@ The system operates in three phases:
 3.  **Hybrid Execution**: Automatically switches between **Quality Mode** (4 iters, complex priors) and **Speed Mode** (2 iters, simplified) based on scene complexity.
 
 ---
+## 🏆 Benchmark Comparison (SOTA)
+
+We evaluate MAPD-Ultimate against strong baselines:
+**Median**, **NLM+**, **BM3D-R**, **WNNM-Proxy**, and **MAPD (Ours)** under three impulse noise levels.
+
+### 🔹 Noise Density: 20%
+![Benchmark 20%](benchmark_noise_20.png)
+
+### 🔹 Noise Density: 40%
+![Benchmark 40%](benchmark_noise_40.png)
+
+### 🔹 Noise Density: 60%
+![Benchmark 60%](benchmark_noise_60.png)
+
+> **Note:**  
+> Each benchmark image includes:  
+> ✅ Full image comparison  
+> ✅ Auto-selected zoom-in region (texture-rich)  
+> ✅ Quantitative metrics panel (PSNR / SSIM / Time)  
+
+This highlights MAPD’s **balance of high restoration quality and efficiency**, outperforming classical filters and matching low-rank methods at a fraction of the runtime.
 
 ## 🚀 Performance
 
