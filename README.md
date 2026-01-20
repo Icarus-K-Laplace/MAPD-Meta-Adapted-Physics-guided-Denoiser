@@ -14,6 +14,14 @@ Flagship restoration framework fusing Meta-Learning with Fractional Calculus pri
 By using a lightweight **Meta-Parameter Network**, MAPD dynamically tunes the hyperparameters of a **Fractional-Order Variational Solver** in real-time.
 
 ---
+## 🧩 System Architecture
+
+![System Architecture](Adaptive CNN FFT Pipeline.png)
+
+The system operates in three phases:
+1.  **Meta-Learning (Brain)**: Estimates optimal physical parameters ($\alpha$, $\lambda$) from the noisy input.
+2.  **Feature Extraction (Eye)**: Computes fractional derivatives in the frequency domain to capture weak textures.
+3.  **Iterative Solver (Muscle)**: A Numba-accelerated variational solver that fuses polynomial fitting (texture) and median filtering (noise) based on the feature maps.
 
 ## 🧠 Core Innovation
 
