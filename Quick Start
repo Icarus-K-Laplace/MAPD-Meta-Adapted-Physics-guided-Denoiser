@@ -1,0 +1,16 @@
+import cv2
+import numpy as np
+from mapd.engine import MAPDEngine
+
+# 1. Load Engine (Auto-downloads weights if missing)
+engine = MAPDEngine(use_gpu=False)
+
+# 2. Load Data
+img = cv2.imread("data/sample.png", 0)
+# Create a dummy mask for demo (in production, use a noise detector)
+mask = np.zeros_like(img); mask[img > 250] = 1 
+
+# 3. Restore
+clean_img = engine.process(img, mask)
+
+cv2.imwrite("restored.png", clean_img)
