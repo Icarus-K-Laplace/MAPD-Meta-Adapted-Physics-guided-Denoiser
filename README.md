@@ -61,6 +61,16 @@ This highlights MAPD’s **balance of high restoration quality and efficiency**,
 | **60%** | 31.38 | 0.9119 | 0.45s |
 
 > *Tested on 512x512 16-bit raw data. Numba JIT enabled.*
+## 🔬 Ablation (MetaNet vs Heuristic)
+
+MetaNet is **optional**. In our tests, gains are **marginal** (<0.5 dB PSNR, <0.01 SSIM),  
+so the default pipeline uses **heuristic parameters** for simplicity and robustness.
+
+![Ablation 40%](ablation_noise_40.png)
+
+Other noise levels:  
+- 20%: `assets/ablation/ablation_noise_20.png`  
+- 60%: `assets/ablation/ablation_noise_60.png`
 
 ---
 
