@@ -16,7 +16,7 @@ By using a lightweight **Meta-Parameter Network**, MAPD dynamically tunes the hy
 ---
 ## 🧩 System Architecture
 
-![System Architecture](Adaptive CNN FFT Pipeline.png)
+![System Architecture](Adaptive_CNN_FFT_Pipeline.png)
 
 The system operates in three phases:
 1.  **Meta-Learning (Brain)**: Estimates optimal physical parameters ($\alpha$, $\lambda$) from the noisy input.
